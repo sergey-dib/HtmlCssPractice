@@ -16,7 +16,7 @@ h1 {
   background-image: conic-gradient(#f3ec78, #af4261);
   /* Установливаем размер фона и свойства повтора */
   background-size: 100%;
-  /* background-repeat: repeat; */
+  background-repeat: repeat;
   /* Используем текст как маску для фона */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
