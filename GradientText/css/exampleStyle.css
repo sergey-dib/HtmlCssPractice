@@ -2,7 +2,7 @@ body {
   background-color: #fdf1f0;
 }
 
-h1 {
+.gradient-text {
   font-family: "Archivo Black", sans-serif;
   font-weight: normal;
   font-size: 6em;
@@ -31,7 +31,7 @@ h1 {
     #a7489b 83.333%
   );
   /* Установливаем размер фона и свойства повтора */
-  background-size: 700%;
+  background-size: 100%;
   background-repeat: repeat;
   /* Используем текст как маску для фона */
   -webkit-background-clip: text;
@@ -68,5 +68,81 @@ h1 {
     }
     100% {
         background-size: 650%;
+    }
+}
+
+/* Стили для второго примера */
+
+.gradient-text-ex-2{
+    font-family: "Work Sans", sans-serif;
+    font-size: 5em;
+    font-weight: bold;
+    width: 5em;
+    margin: auto;
+    margin-top: calc(50vh - 2em);
+    line-height: 1.2em;
+}
+
+.gradient-text-ex-2{
+    background: #CA4246;
+    /* Добавляем градиент */
+    background: conic-gradient(
+    #CA4246 16.666%, 
+    #E16541 16.666%, 
+    #E16541 33.333%, 
+    #F18F43 33.333%, 
+    #F18F43 50%, 
+    #8B9862 50%, 
+    #8B9862 66.666%, 
+    #476098 66.666%, 
+    #476098 83.333%, 
+    #A7489B 83.333%);
+
+    /* Устанавливаем размер фона */
+    background-size: 57%;
+    background-repeat: repeat;
+
+    /* Используем текст как маску для фона */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+
+    /* Добавляем анимацияю */
+    animation: rainbow-text-animation-rev-2 0.5s ease-in-out forwards;
+
+}
+
+.gradient-text-ex-2:hover{
+    animation: rainbow-text-simple-animation-2 0.5s ease-in-out forwards;
+}
+
+@keyframes rainbow-text-animation-rev-2{
+    0% {
+        background-size: 300%;
+        background-position: -9em 1em;
+    }
+    20% {
+        background-size: 57%;
+        background-position: 0 1em;
+    }
+    100% {
+        background-size: 57%;
+        background-position: 0 0;
+    }
+}
+
+@keyframes rainbow-text-simple-animation-2{
+    0% {
+        background-size: 57%;
+        background-position: 0 0;
+    }
+    20% {
+        background-size: 57%;
+        background-position: 0 1em;
+    }
+    100% {
+        background-size: 300%;
+        background-position: -9em 0;
     }
 }
