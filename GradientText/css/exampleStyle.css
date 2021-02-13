@@ -7,7 +7,8 @@ h1 {
   font-weight: normal;
   font-size: 6em;
   text-align: center;
-  margin: 0 auto;
+  margin: auto;
+  margin-top: calc(60vh - 3em);
   width: 650px;
   cursor: pointer;
 }
