@@ -42,107 +42,184 @@ body {
   animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
 }
 
-.gradient-text:hover{
-    /* Добавление анимации */
+.gradient-text:hover {
+  /* Добавление анимации */
   animation: rainbow-text-simple-animation 0.75s ease forwards;
 }
 
 @keyframes rainbow-text-simple-animation-rev {
-    0% {
-        background-size: 650%;
-    }
-    40% {
-        background-size: 650%;
-    }
-    100% {
-        background-size: 100%;
-    }
+  0% {
+    background-size: 650%;
+  }
+  40% {
+    background-size: 650%;
+  }
+  100% {
+    background-size: 100%;
+  }
 }
 
 @keyframes rainbow-text-simple-animation {
-    0% {
-        background-size: 100%;
-    }
-    80% {
-        background-size: 650%;
-    }
-    100% {
-        background-size: 650%;
-    }
+  0% {
+    background-size: 100%;
+  }
+  80% {
+    background-size: 650%;
+  }
+  100% {
+    background-size: 650%;
+  }
 }
 
 /* Стили для второго примера */
 
-.gradient-text-ex-2{
-    font-family: "Work Sans", sans-serif;
-    font-size: 5em;
-    font-weight: bold;
-    width: 5em;
-    margin: auto;
-    margin-top: calc(50vh - 2em);
-    line-height: 1.2em;
+.gradient-text-ex-2 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 5em;
+  font-weight: bold;
+  width: 5em;
+  margin: auto;
+  margin-top: calc(50vh - 2em);
+  line-height: 1.2em;
+  cursor: pointer;
 }
 
-.gradient-text-ex-2{
-    background: #CA4246;
-    /* Добавляем градиент */
-    background: conic-gradient(
-    #CA4246 16.666%, 
-    #E16541 16.666%, 
-    #E16541 33.333%, 
-    #F18F43 33.333%, 
-    #F18F43 50%, 
-    #8B9862 50%, 
-    #8B9862 66.666%, 
-    #476098 66.666%, 
-    #476098 83.333%, 
-    #A7489B 83.333%);
+.gradient-text-ex-2 {
+  background: #ca4246;
+  /* Добавляем градиент */
+  background: conic-gradient(
+    #ca4246 16.666%,
+    #e16541 16.666%,
+    #e16541 33.333%,
+    #f18f43 33.333%,
+    #f18f43 50%,
+    #8b9862 50%,
+    #8b9862 66.666%,
+    #476098 66.666%,
+    #476098 83.333%,
+    #a7489b 83.333%
+  );
 
-    /* Устанавливаем размер фона */
+  /* Устанавливаем размер фона */
+  background-size: 57%;
+  background-repeat: repeat;
+
+  /* Используем текст как маску для фона */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+
+  /* Добавляем анимацияю */
+  animation: rainbow-text-animation-rev-2 0.5s ease-in-out forwards;
+}
+
+.gradient-text-ex-2:hover {
+  animation: rainbow-text-simple-animation-2 0.5s ease-in-out forwards;
+}
+
+@keyframes rainbow-text-animation-rev-2 {
+  0% {
+    background-size: 300%;
+    background-position: -9em 1em;
+  }
+  20% {
     background-size: 57%;
-    background-repeat: repeat;
-
-    /* Используем текст как маску для фона */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-
-    /* Добавляем анимацияю */
-    animation: rainbow-text-animation-rev-2 0.5s ease-in-out forwards;
-
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 57%;
+    background-position: 0 0;
+  }
 }
 
-.gradient-text-ex-2:hover{
-    animation: rainbow-text-simple-animation-2 0.5s ease-in-out forwards;
+@keyframes rainbow-text-simple-animation-2 {
+  0% {
+    background-size: 57%;
+    background-position: 0 0;
+  }
+  20% {
+    background-size: 57%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 300%;
+    background-position: -9em 0;
+  }
 }
 
-@keyframes rainbow-text-animation-rev-2{
-    0% {
-        background-size: 300%;
-        background-position: -9em 1em;
-    }
-    20% {
-        background-size: 57%;
-        background-position: 0 1em;
-    }
-    100% {
-        background-size: 57%;
-        background-position: 0 0;
-    }
+/* Gradient for link */
+
+.gradient-text-3 {
+  background-color: #6c36d8;
+
+  background-image: linear-gradient(45deg, #0a4234 50%, #f2cfed 50%);
+
+  background-size: 270%;
+  background-repeat: repeat;
+  background-position: top right;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+
+  animation: button-animation 0.65s 0.15s ease-out forwards;
 }
 
-@keyframes rainbow-text-simple-animation-2{
-    0% {
-        background-size: 57%;
-        background-position: 0 0;
-    }
-    20% {
-        background-size: 57%;
-        background-position: 0 1em;
-    }
-    100% {
-        background-size: 300%;
-        background-position: -9em 0;
-    }
+a:hover,
+a:hover span {
+  animation: button-animation-rev 0.65s ease-out forwards;
+}
+
+a:hover {
+  box-shadow: 3px 2px 10px 1px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+}
+
+@keyframes button-animation {
+  0% {
+    background-position: top right;
+  }
+  100% {
+    background-position: top left;
+  }
+}
+
+@keyframes button-animation-rev {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+
+a {
+  margin-top: 1em;
+  margin-top: calc(50vh - 3em);
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(45deg, #f2cfed 50%, #0a4234 50%);
+  background-size: 270%;
+  background-repeat: repeat;
+  background-position: top right;
+  animation: button-animation 0.65s 0.15s ease-out forwards;
+  display: table;
+  border-radius: 0.5em;
+  text-decoration: none;
+  box-shadow: 7px 4px 20px 1px rgba(0, 0, 0, 0.15);
+  padding: 1.5em 0;
+  cursor: pointer;
+}
+
+a span {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: normal;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 0;
+  margin-bottom: -0.25em;
+  width: 100%;
+  padding: 0 1.5em;
 }
