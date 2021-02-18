@@ -76,3 +76,20 @@ body{
     padding: 0;
     margin: 8px 0;
 }
+
+.table-timeline{
+    width: 100%;
+}
+
+.table-timeline td{
+    border-top: 1px solid black;
+    padding: 5px;
+}
+
+.table-timeline:last-child{
+    border-bottom: 1px solid black;
+}
+
+.table-timeline tr td:nth-child(even){
+    background: #e7d9d952;;
+}
