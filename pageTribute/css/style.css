@@ -1,0 +1,78 @@
+body{
+    background-color: antiquewhite;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 6px;
+    background-color:whitesmoke;
+    border-radius: 10px;
+}
+
+.header_name{
+    text-align: center;
+    font-style: italic;
+    font-size: 36px;
+    line-height: 1.2em;
+}
+
+.date_life{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.header-img{
+    height: 450px;
+    border: 2px solid black;
+    border-radius: 100%;
+    margin: 10px auto;
+    display: block;
+    box-shadow: 0 0 20px 3px #704d4d;
+}
+
+.caption-text{
+    font-size: 18px;
+    background: lightgrey;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.main_section{
+    display: table;
+}
+
+.tableRow{
+    display: table-row;
+}
+
+.main_info{
+    display: table-cell;
+    padding: 0 10px 0 0;
+}
+
+.life_list{
+    display: table-cell;
+    width: 27%;
+    border: 1px solid black;
+    padding: 9px;
+    border-radius: 6px;
+    box-shadow: inset 0 0 4px 1px #6e3d3d;
+}
+
+.keyInfo{
+    display: table-cell;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+.valueInfo{
+    display: table-cell;
+}
+
+.valueInfo ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 8px 0;
+}
