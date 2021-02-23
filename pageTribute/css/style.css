@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Ballet&family=Yanone+Kaffeesatz&display=swap');
+
 body{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+    line-height: 1.2em;
     background-color: antiquewhite;
 }
 
@@ -13,12 +18,12 @@ body{
 .header_name{
     text-align: center;
     font-style: italic;
-    font-size: 36px;
+    font-size: 55px;
     line-height: 1.2em;
 }
 
 .date_life{
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     font-weight: bold;
 }
@@ -92,4 +97,17 @@ body{
 
 .table-timeline tr td:nth-child(even){
     background: #e7d9d952;;
+}
+
+.created-info{
+    font-family: 'Ballet', cursive;
+    background: #9d868673;
+    font-size: 60px;
+    line-height: 1.5em;
+    font-weight: bold;
+    padding: 40px 0;
+    margin: 0px;
+    width: 700px;
+    text-align: center;
+    margin: 0 auto;
 }
