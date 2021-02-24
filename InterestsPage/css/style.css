@@ -40,3 +40,41 @@ body{
     border: 6px solid white;
     border-radius: 10px;
 }
+
+.my_hobby{
+    float: left;
+    width: 30%;
+    margin-right: 5px;
+}
+
+.my_interests{
+    width: 65%;
+    margin-left: 5px;
+}
+
+.hobby_card{
+    background-color:white;
+    /* padding: 6px; */
+    width: 80%;
+    border-radius: 6px;
+}
+
+.card_header{
+    padding: 6px;
+    background: rgba(211, 200, 200, .4);;
+    border-radius: 6px 6px 0 0;
+}
+
+.card_header h2{
+    display: inline-block;
+    margin: 0;
+    width: 89%;
+}
+
+.icon_card{
+    height: 25px;
+}
+
+.card_body{
+    padding: 0 6px 6px;
+}
