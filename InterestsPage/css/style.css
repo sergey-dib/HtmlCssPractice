@@ -1,0 +1,42 @@
+
+/* 
+backround color - #B9F5F1
+container color - #89AEE2
+block color - #E2FEB0
+color - #F2C1C1
+*/
+body{
+    background-color: #B9F5F1;
+}
+
+.container{
+    background-color: #89AEE2;
+    padding: 8px;
+    max-width: 1200px;
+    min-width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.image-posthion{
+    position: relative;
+    background-image: url(../img/mountains.jpg);
+    height: 400px;
+    background-position: 34% 54%;
+    background-size: 100%;
+    margin-left: 60px;
+    margin-bottom: 15px;
+    margin-right: -20px;
+}
+
+.my_foto{
+    position: absolute;
+    bottom: 0;
+    left: -40px;
+}
+
+.my_foto img{
+    width: 300px;
+    border: 6px solid white;
+    border-radius: 10px;
+}
