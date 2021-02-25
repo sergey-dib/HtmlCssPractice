@@ -48,7 +48,8 @@ body{
 }
 
 .my_interests{
-    width: 65%;
+    width: 69%;
+    float: right;
     margin-left: 5px;
 }
 
@@ -99,4 +100,10 @@ body{
     position: absolute;
     top: 8px;
     left: -6%;
+}
+
+.interests_card{
+    background-color:white;
+    border-radius: 6px;
+    margin-bottom: 10px;
 }
