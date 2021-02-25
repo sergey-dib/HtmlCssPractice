@@ -57,6 +57,7 @@ body{
     /* padding: 6px; */
     width: 80%;
     border-radius: 6px;
+    margin-bottom: 10px;
 }
 
 .card_header{
@@ -77,4 +78,25 @@ body{
 
 .card_body{
     padding: 0 6px 6px;
+}
+
+.favorite_hobby{
+    font-size: 35px;
+    line-height: 1.2em;
+    position: relative;
+    padding: 5px 6px 5px 42px;
+    margin: 25px;
+}
+
+.favorite_hobby::before{
+    content:"";
+    background-image: url(../img/listening.svg);
+    display: inline-block;
+    height: 37px;
+    background-repeat: no-repeat;
+    background-size: 73px 33px;
+    width: 63px;
+    position: absolute;
+    top: 8px;
+    left: -6%;
 }
