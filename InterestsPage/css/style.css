@@ -61,25 +61,25 @@ body{
     margin-bottom: 10px;
 }
 
-.hobby_card .card_header,
-.interests_card .card_header{
+.hobby_card_header,
+.interests_card_header{
     padding: 6px;
     background: rgba(211, 200, 200, .4);;
     border-radius: 6px 6px 0 0;
 }
 
-.hobby_card .card_header h2{
+.hobby_card_header h2{
     display: inline-block;
     margin: 0;
     width: 89%;
     line-height: 1.2em;
 }
 
-.icon_card{
+.hobby_icon_card{
     height: 25px;
 }
 
-.card_body{
+.hobby_card_body{
     padding: 0 6px 6px;
 }
 
@@ -110,17 +110,21 @@ body{
     margin-bottom: 10px;
 }
 
-.interests_card .card_header h2{
+.interests_card_header h2{
     margin: 0;
     width: 91%;
     display: inline-block;
     line-height: 1.2em;
 }
 
-.interests_card .card_header span{
+.interests_card_header span{
     font-size: 12px;
     font-style: italic;
     line-height: 1.2em;
     float: right;
     width: max-content;
+}
+
+.interests_card_body{
+    margin: 5px;
 }
