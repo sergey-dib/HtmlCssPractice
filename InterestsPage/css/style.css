@@ -133,3 +133,19 @@ body{
 .interests-body-text{
     margin: 0 5px;
 }
+
+@media screen and (max-width: 1010px){
+    .my_hobby{
+        float: none;
+        width: 100%;
+    }
+
+    .my_interests{
+        float: none;
+        width: 100%;
+    }
+
+    .hobby_card{
+        width: 100%;
+    }
+}
