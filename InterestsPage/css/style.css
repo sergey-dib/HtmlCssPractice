@@ -127,4 +127,9 @@ body{
 
 .interests_card_body{
     margin: 5px;
+    display: flex;
+}
+
+.interests-body-text{
+    margin: 0 5px;
 }
